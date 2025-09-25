@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/component/Navbar";
+import Footer from "@/component/Footer";
+import { Arvo } from "next/font/google";
+import { Exo_2 } from "next/font/google";
+
+export const exo2 = Exo_2({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const arvo = Arvo({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +39,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+        className={`${arvo.className} ${exo2.className} antialiased min-h-screen flex flex-col`}
+        >
+        <Navbar/> 
+          <main className="flex-grow relative pt-16"> {/* ← ADD THIS PADDING */}
+            {children}
+          </main>
+        <Footer/>
       </body>
     </html>
   );
