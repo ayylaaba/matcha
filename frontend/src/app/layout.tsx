@@ -41,8 +41,8 @@ export default function RootLayout({
       <body
         className={`${arvo.className} ${exo2.className} antialiased min-h-screen flex flex-col`}
         >
-        <Navbar/> 
-          <main className="flex-grow relative pt-16"> {/* ← ADD THIS PADDING */}
+        <Navbar /> 
+          <main className="flex-grow relative"> {/* ← ADD THIS PADDING */}
             {children}
           </main>
         <Footer/>
