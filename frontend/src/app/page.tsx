@@ -90,7 +90,7 @@ export default function Home() {
         </div>
 
         {/* features cards */}
-        <div className="w-200 max-w-6xl mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 place-items-center">  
+        <div id="feature" className="w-200 max-w-6xl mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 place-items-center">  
           <Card className="group flex flex-col items-center justify-center hover:shadow-black/40 text-center w-[250px] h-[250px] bg-white/70 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-300">
             <div className="flex justify-center h-15 w-15 mt-2 group-hover:rotate-6 transition-transform duration-300">
               <Users className="w-15 h-15 p-2 bg-rose-200 group-hover:rotate-6 transition-transform duration-300 rounded-2xl text-rose-400 mb-3 " />
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
         {/* How It's Works  */}
       </section>
-      <section className="relative flex-col justify-center mt-10 h-full w-full" id="how-it-works">
+      <section id="howitworks" className="relative flex-col justify-center mt-10 h-full w-full">
         <div className="flex flex-col justify-center items-center mb-6">
           <h1 className={`text-5xl ${arvo.className} font-bold text-rose-400 relative pb-2`}>
             How It Works
@@ -226,7 +226,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative flex-col justify-center mt-20 h-full w-full bg-gradient-to-b from-white to-rose-50" id="opinons">
+      {/* stories */}
+      <section id="opinons" className="relative flex-col justify-center mt-20 h-full w-full bg-gradient-to-b from-white to-rose-50" id="opinons">
         <div className="flex flex-col justify-center items-center">
           <h1 className={`text-5xl ${arvo.className} font-bold text-rose-400 relative pb-2`}>
             Success Stories
